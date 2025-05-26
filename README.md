@@ -2,9 +2,29 @@
 
 A Ruby gem for implementing Model Context Protocol servers
 
+## Installation
+
+Add this line to your application's Gemfile:
+
+```ruby
+gem 'mcp'
+```
+
+And then execute:
+
+```bash
+$ bundle install
+```
+
+Or install it yourself as:
+
+```bash
+$ gem install mcp
+```
+
 ## MCP Server
 
-The `ModelContextProtocol::Server` class is the core component that handles JSON-RPC requests and responses.
+The `MCP::Server` class is the core component that handles JSON-RPC requests and responses.
 It implements the Model Context Protocol specification, handling model context requests and responses.
 
 ### Key Features
@@ -67,8 +87,8 @@ If you want to build a local command-line application, you can use the stdio tra
 
 ```ruby
 #!/usr/bin/env ruby
-require "model_context_protocol"
-require "model_context_protocol/transports/stdio"
+require "mcp"
+require "mcp/transports/stdio"
 
 # Create a simple tool
 class ExampleTool < ModelContextProtocol::Tool
