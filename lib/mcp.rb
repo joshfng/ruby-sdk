@@ -1,6 +1,8 @@
 # frozen_string_literal: true
 
 require_relative "mcp/server"
+require_relative "mcp/client"
+require_relative "mcp/client/transports/http"
 require_relative "mcp/string_utils"
 require_relative "mcp/tool"
 require_relative "mcp/tool/input_schema"
